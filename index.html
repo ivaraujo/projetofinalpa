@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <nav id="navB">
+        <a href="/cadastro" title="adicionar ícones"><img src="icons/botao-adicionar.png" /></a>
+    </nav>
+    <div>
+        <img src="/img/logo.png" alt="logo" id="logo">
+    </div>
+    <h1 class="title">Alagoinhas Preços</h1>
+    <div id="container">
+        <div id="caixaFiltro">
+            <form method="post" action="#">
+                <select name="produtos" id="produto">
+                    <option value="">Selecione o produto</option>
+                    <option value="Laranja">Laranja</option>
+                </select>
+                <select name="mercados" id="mercados">
+                    <option value="">Selecione o mercado</option>
+                    <option value="Tamarineiro">Tamarineiro</option>
+                </select>
+            </form>
+            <button id="search">Pesquisar</button>
+        </div>
+
+        <table id="tabela">
+            <tr id="titulos">
+                <th class="linhaUm">Produto</th>
+                <th class="linhaUm">Marca</th>
+                <th class="linhaUm">Preço</th>
+                <th class="linhaUm">Volume</th>
+                <th class="linhaUm">Mercado</th>
+            </tr>
+            <tr>
+                <th class="linhaUm">Áçucar</th>
+                <th class="linhaUm">Cristal</th>
+                <th class="linhaUm">8.50</th>
+                <th class="linhaUm">1Kg</th>
+                <th class="linhaDois">Tamarineiro</th>
+            </tr>
+            <tr>
+                <th>Áçucar</th>
+                <th>Cristal</th>
+                <th>8.50</th>
+                <th>4Kg</th>
+                <th>Gbarbosa</th>
+            </tr>
+            <tr>
+                <th>Áçucar</th>
+                <th>Cristal</th>
+                <th>8.50</th>
+                <th>3Kg</th>
+                <th>Cesta</th>
+            </tr>
+
+            <tr>
+                <th id="produtos"></th>
+                <th id="marcas"></th>
+                <th id="precos"></th>
+                <th id="volumes"></th>
+                <th id="mercados"></th>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script src="scripts/conexao.js"></script>
+<script src="scripts/pesquisa.js"></script>
+
+</html>
