@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    background: rgb(255, 255, 255);
+}
+
+h1{
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-right: 10px;
+}
+
+button{
+    cursor: pointer;
+    background-color: rgb(219, 80, 80);    
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+button:hover{
+    background-color: rgb(248, 100, 100);
+}
+
+.title{
+    margin-top: -40px;
+    margin-bottom: 20px;
+    font-size: 50px;
+
+    & span {
+        color: rgb(219, 80, 80);
+    }
+}
+
+#logo{    
+    width: 100%;
+    height: 100%;
+    max-width: 370px;
+    z-index: 0;
+}
+
+nav img{
+    width: 100%;
+    max-width: 30px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+    background-color: rgb(219, 80, 80);
+    z-index: 1;
+
+    & h1{
+        padding: 0px 0px 0px 15px;
+        color: white;
+    }
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    max-width: 680px;
+    
+}
+
+#containerPergunta{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#containerReset{
+    margin-top: 10px;
+}
+
+#titulos{
+    background-color: lightgrey;
+}
+
+footer{
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(219, 80, 80);
+    color: white;
+}
