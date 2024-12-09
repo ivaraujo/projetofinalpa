@@ -16,7 +16,7 @@ body{
     height: 100vh;
     z-index: 0;
     background: rgb(255, 255, 255);
-    background-image: url(/img/fundo.png);
+    background-image: url(img/fundo.png);
     background-position: center;
     background-size: cover; 
 }
