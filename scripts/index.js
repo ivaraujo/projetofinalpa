@@ -3,16 +3,21 @@ let resp = document.querySelector("#resposta");
 let quest = document.querySelector("#pergunta");
 let msg = document.querySelector("#mensagem");
 
+document.addEventListener("keypress", function(e) {
+    if(e.key === 'Enter') {
+        const btn = document.querySelector("#botao");
+        btn.click();
+        mensagem();
+    }
+});
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
-sorteio = getRandomInt(5);
+sorteio = getRandomInt(10);
 
 console.log(sorteio);
 var pontos = 0;
-
-sorteio = getRandomInt(5);
-
 
 if(sorteio == 0){
     quest.innerHTML = "Qual o maior animal do mundo?";
@@ -29,14 +34,28 @@ if(sorteio == 3){
 if(sorteio == 4){
     quest.innerHTML = "Nome da primeira capital do brasil?";
 }
-      
-
+if(sorteio == 5){
+    quest.innerHTML = "Em que país se encontra a Grande Muralha?";
+}
+if(sorteio == 6){
+    quest.innerHTML = "Qual planeta do Sistema Solar é conhecido como Planeta Vermelho?";
+}
+if(sorteio == 7){
+    quest.innerHTML = "Qual é a capital da França?";
+}
+if(sorteio == 8){
+    quest.innerHTML = "Em que continente fica o deserto do Saara?";
+}
+if(sorteio == 9){
+    quest.innerHTML = "Qual é o nome da camada atmosférica que protege a Terra dos raios ultravioletas do sol?";
+}
 
 botao.addEventListener('click',function mensagem(){
+    let respostaUsuario = resp.value.toLowerCase();
     if(sorteio == 0){        
         
-        if(resp.value == "baleia"){
-            msg.innerHTML = "Certa resposta!";             
+        if(respostaUsuario == "baleia"){
+            msg.innerHTML = "Parabéns! Certa resposta!";             
         }
         else{
             msg.innerHTML = "Lamento, resposta incorreta!";
@@ -44,8 +63,8 @@ botao.addEventListener('click',function mensagem(){
     }
     if(sorteio == 1){        
         
-        if(resp.value == "amazonas"){
-            msg.innerHTML = "Certa resposta!";             
+        if(respostaUsuario == "amazonas"){
+            msg.innerHTML = "Parabéns! Certa resposta!";             
         }
         else{
             msg.innerHTML = "Lamento, resposta incorreta!";
@@ -53,8 +72,8 @@ botao.addEventListener('click',function mensagem(){
     } 
     if(sorteio == 2){        
         
-        if(resp.value == "cascavel"){
-            msg.innerHTML = "Certa resposta!";             
+        if(respostaUsuario == "cascavel"){
+            msg.innerHTML = "Parabéns! Certa resposta!";             
         }
         else{
             msg.innerHTML = "Lamento, resposta incorreta!";
@@ -62,8 +81,8 @@ botao.addEventListener('click',function mensagem(){
     } 
     if(sorteio == 3){        
         
-        if(resp.value == "gurgel"){
-            msg.innerHTML = "Certa resposta!";             
+        if(respostaUsuario == "gurgel"){
+            msg.innerHTML = "Parabéns! Certa resposta!";             
         }
         else{
             msg.innerHTML = "Lamento, resposta incorreta!";
@@ -71,11 +90,57 @@ botao.addEventListener('click',function mensagem(){
     } 
     if(sorteio == 4){        
         
-        if(resp.value == "salvador"){
-            msg.innerHTML = "Certa resposta!";             
+        if(respostaUsuario == "salvador"){
+            msg.innerHTML = "Parabéns! Certa resposta!";             
         }
         else{
             msg.innerHTML = "Lamento, resposta incorreta!";
         }
     }  
+    if(sorteio == 5){        
+        
+        if(respostaUsuario == "china"){
+            msg.innerHTML = "Parabéns! Certa resposta!";             
+        }
+        else{
+            msg.innerHTML = "Lamento, resposta incorreta!";
+        }
+    }  
+    if(sorteio == 6){        
+        
+        if(respostaUsuario == "marte"){
+            msg.innerHTML = "Parabéns! Certa resposta!";             
+        }
+        else{
+            msg.innerHTML = "Lamento, resposta incorreta!";
+        }
+    }  
+    if(sorteio == 7){        
+        
+        if(respostaUsuario == "paris"){
+            msg.innerHTML = "Parabéns! Certa resposta!";             
+        }
+        else{
+            msg.innerHTML = "Lamento, resposta incorreta!";
+        }
+    }  
+    if(sorteio == 8){        
+        
+        if(respostaUsuario == "áfrica" || respostaUsuario == "africa"){
+            msg.innerHTML = "Parabéns! Certa resposta!";             
+        }
+        else{
+            msg.innerHTML = "Lamento, resposta incorreta!";
+        }
+    }  
+    if(sorteio == 9){        
+        
+        if(respostaUsuario == "estratosfera"){
+            msg.innerHTML = "Parabéns! Certa resposta!";             
+        }
+        else{
+            msg.innerHTML = "Lamento, resposta incorreta!";
+        }
+    }  
+
 });
